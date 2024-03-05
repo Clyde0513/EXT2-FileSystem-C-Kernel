@@ -16,6 +16,15 @@ Also do fsck.ext2 cs111 -base.img to debug your EXT2 filesystem and make sure th
 Then, once your filesystem is correct, make a directory called mnt. Then do sudo mount -o loop cs111-base.img mnt to
 mount your EXT2 filesystem and what loop does is it let you use the file.
 
+Note: you can do ls -ain mnt/ to get the following filesystem:
+
+total 7
+2 drwxr -xr -x 3 0 0 1024 .
+..
+13 lrw -r--r-- 1 1000 1000 11 hello -> hello - world
+12 -rw -r--r-- 1 1000 1000 12 hello - world
+11 drwxr -xr -x 2 0 0 1024 lost+ found
+
 ## Cleaning up
 
 Unsudo your mount by doing sudo umount mnt when you're done.
