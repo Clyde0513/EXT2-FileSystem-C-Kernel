@@ -1,4 +1,4 @@
-# Hey! I'm Filing Here
+# EXT2 FileSystem in C/Kernel
 
 In this lab, I successfully implemented the following EXT2 filesystem image that the kernel could mount. It is a 1 MiB ext2
 file system with 1000 sized blocks and has a space for 128 inodes. The EXT2 filesystem has 4 inotes: the root directory,
