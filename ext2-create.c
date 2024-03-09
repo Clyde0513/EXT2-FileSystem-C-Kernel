@@ -543,7 +543,7 @@ void write_hello_world_file_block(int fd)
 	}
 
 	ssize_t written_bytes = write(fd, hello_world, strlen(hello_world));
-	if (written_bytes == 1)
+	if (written_bytes != 12)
 	{
 		errno_exit("Invalid Write Byte");
 	}
